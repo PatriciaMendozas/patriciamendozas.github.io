@@ -1,6 +1,6 @@
-/**{
+*{
     outline:1px solid rgba(255,0,0,1);
-}*/
+}
 * {
 	box-sizing: border-box;
 	user-select: none;
@@ -90,9 +90,9 @@ html, body {
     background-size: cover;
     height: 750px;
 }
-.soy{
-   padding: 3% 4% ;
-   
+
+#section-two {
+    
 }
 #section-three {
     
@@ -131,7 +131,6 @@ html, body {
 #section-menu a {
     float: right;
     clear: both;
-
     display: block;
     height: 2em;
     line-height: 2em;

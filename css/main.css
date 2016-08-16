@@ -12,19 +12,31 @@ img{width: 100%;}
 .pdd{padding-right: 0px;
 padding-top: 2px;}
 .pd0{padding-left:0px;}
-.pdl3{padding-left: 3%;}
 .circulo{padding:0% 0% 3% 7%;}
 .mb4{margin-bottom: 4%;}
 .mt30{margin: 10% 5% 0% 60%;}
 .mt40{margin: 30% 0% 12%;}
 .mg23{margin: 2% 0% 2% 3%;}
-.phab{padding:3% 18%; }
-.menu{position: relative;}
-.ptabla{position: absolute;}
-.phab{padding-right:18%;}
+.phab{padding:3% 18%; position:relative;}
+.menu1{position: absolute;
+    height: 36em;
+    left: 18%;
+    margin: -2% 10% 0%;}
+.menu2{position: absolute;
+    height: 36em;
+    left: 37%;
+    margin: -2% 4% 0%;
+    padding-left: 7%;
+    border-left: 1px dashed #fff}
+.menu3{position: absolute;
+    height: 36em;
+    left: 58%;
+    margin: -2% 4% 0%;
+    padding-left: 7%;
+    border-left: 1px dashed #fff}
 /*trabajos*/
-.trabajos .nav-tabs {border-bottom: none;}
-.trabajos .nav-tabs > li.active > a {
+.trabajos.nav-tabs {border-bottom: none;}
+.trabajos.nav-tabs > li.active > a {
   color: #fff;
   background-color: #666666;
   font-weight: bolder;
