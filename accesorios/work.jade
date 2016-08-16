@@ -1,0 +1,36 @@
+include workjn
+ul.nav.nav-tabs
+	li.active
+		a(data-toggle="tab" href="#home") TODOS
+	li
+		a(data-toggle="tab" href="#menu1") HTML - CSS
+	li 
+		a(data-toggle="tab" href="#menu2") JS- JQUERY
+	li 
+		a(data-toggle="tab" href="#menu3") OTROS
+.tab-content
+	#home.tab-pane.fade.in.active
+		.row.page.text-center
+			+col("#","../image/primerlayout.jpg", "Mi primer Layout","Nuestras Coders")
+			+col("#","../image/androi.png", "Dashgum Theme","sfsdf")
+			+col("#","../image/angular.png", "Blog")
+			+col("#","image/kane.png", "Kane Theme ")
+			+col("#","image/agency.png", "Agency ")
+			+col("#","image/love.png", "Love Blog")
+	#menu1.tab-pane.fade
+		.row.page.text-center
+			+col("#","image/flat.png", "Flat Theme")
+			+col("#","image/dash.png", "Dashgum Theme")
+			+col("#","image/blog.png", "Blog")
+	#menu2.tab-pane.fade
+		.row.page.text-center
+			+col("#","image/kane.png", "Kane Theme ")
+			+col("#","image/agency.png", "Agency ")
+			+col("#","image/love.png", "Love Blog")
+	#menu3.tab-pane.fade
+		.row.page.text-center
+			+col("#","image/todo.png", "TODO APP")
+			+col("#","image/tictac.png", "Tic Tac Toe")
+			+col("#","image/reloj.png", "Reloj Digital")
+
+	
