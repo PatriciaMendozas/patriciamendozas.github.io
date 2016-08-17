@@ -1,6 +1,6 @@
 body{
-    color:#fff;
-    background-color:#1E1E1E;
+    color:#000;
+    background-color:#fff;
     }
 .inner {
     text-align: center;
@@ -188,7 +188,7 @@ padding-top: 2px;}
 }
 /*menu*/
 .menu {
-    font-family:Raleway;
+    font-family:'Arima Madurai', cursive;
     position: fixed;
     top: 0;
     width: 100%;
