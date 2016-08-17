@@ -27,6 +27,7 @@
 }
 #Contacto{
     background:url("../image/FOOTER.png");
+    background-size: cover;
 }
 .logo-wrap {
     width: 100%;

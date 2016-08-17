@@ -234,4 +234,34 @@ font-size: 20px;}
 @media(max-width:530px){
     .tri{width: 300px;}
     .pestanas{width: 280px;font-size:2em;}
+    .fixed-left{left:-53px;}
+    .nombre{margin:25% 18%;font-size: 16px}
+    .caricatura{margin-left:22%;}
+    .phab{padding: 2% 22%;}
+    .circulo {
+    padding: 1% 0% 3% 12%;
+    margin-bottom: 6%;}
+    .mg23 {
+    padding: 0% 5%;}
+    #Contacto{background-position: top center; }
+    .menu1 {
+    left: 10%;
+    margin: -3% 10% 0%;}
+    .menu2 {
+    left: 35%;
+    margin: -3% 4% 0%;
+    padding-left: 2%;}
+    .menu3 {
+    left: 65%;
+    margin: -3% 4% 0%;
+    padding-left: 2%;}
+    .nombi {
+    margin-left: 17%;}
+    table{margin-top: 14%;}
+  .mt30 {
+    margin: 1% 21% 9% 29%;
+    padding-top: 12%;
+    background: rgba(134, 131, 126, 0.6);}
+    .mt40{background: rgba(134, 131, 126, 0.6);padding: 3% 0%;
+        }
 }
