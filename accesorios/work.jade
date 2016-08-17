@@ -1,22 +1,18 @@
 include workjn
-ul.nav.nav-tabs
+ul.nav.nav-tabs.pdt6
 	li.active
-		a(data-toggle="tab" href="#home") TODOS
+		a(data-toggle="tab" href="#home") 1
 	li
-		a(data-toggle="tab" href="#menu1") HTML - CSS
+		a(data-toggle="tab" href="#menu1") 2
 	li 
-		a(data-toggle="tab" href="#menu2") JS- JQUERY
-	li 
-		a(data-toggle="tab" href="#menu3") OTROS
+		a(data-toggle="tab" href="#menu2") 3
+	
 .tab-content
 	#home.tab-pane.fade.in.active
 		.row.page.text-center
 			+col("#","../image/primerlayout.jpg", "Mi primer Layout","Nuestras Coders")
 			+col("#","../image/androi.png", "Dashgum Theme","sfsdf")
-			+col("#","../image/angular.png", "Blog")
-			+col("#","image/kane.png", "Kane Theme ")
-			+col("#","image/agency.png", "Agency ")
-			+col("#","image/love.png", "Love Blog")
+			+col("#","../image/angular.png", "Blog")			
 	#menu1.tab-pane.fade
 		.row.page.text-center
 			+col("#","image/flat.png", "Flat Theme")
@@ -27,10 +23,3 @@ ul.nav.nav-tabs
 			+col("#","image/kane.png", "Kane Theme ")
 			+col("#","image/agency.png", "Agency ")
 			+col("#","image/love.png", "Love Blog")
-	#menu3.tab-pane.fade
-		.row.page.text-center
-			+col("#","image/todo.png", "TODO APP")
-			+col("#","image/tictac.png", "Tic Tac Toe")
-			+col("#","image/reloj.png", "Reloj Digital")
-
-	

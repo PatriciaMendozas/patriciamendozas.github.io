@@ -8,7 +8,7 @@ function initPage()
 function checkScroll()
 {
   var x=document.body.scrollTop;
-  if (x>=1250 && x<1950) {
+  if (x>=1200 && x<1750) {
       move();
   } 
   else {
@@ -45,107 +45,49 @@ function frame() {
   }
 }
 
-/*deslizamiento*/
-jQuery(function($) {
+//MENU SCROLL
+$(".menu a").click(function() {
+  //on click, we get the target value of the selected element
+  var target = $(this).attr('target');
+  //we then scroll our body until the top of the corresponding div in 700ms
+  $('body').animate({
+    scrollTop: $("#" + target).offset().top-45
+  }, 700);
+  //45 is the menu height
+});
 
-  var html = $('html');
-  var viewport = $(window);
-  var viewportHeight = viewport.height();
+//SCROLLSPY                
+function scrollSpy(){
+  $(".menu a").removeClass("active"); //we remove active from every menu element
 
-  var scrollMenu = $('#section-menu');
-  var timeout = null;
-
-  function menuFreeze() {
-    if (timeout !== null) {
-      scrollMenu.removeClass('freeze');
-      clearTimeout(timeout);
-    }
-
-    timeout = setTimeout(function() {
-      scrollMenu.addClass('freeze');
-    }, 2000);
-  }
-  scrollMenu.mouseover(menuFreeze);
-
-  /* ==========================================================================
-     Build the Scroll Menu based on Sections .scroll-item
-     ========================================================================== */
-
-  var sectionsHeight = {},
-    viewportheight, i = 0;
-  var scrollItem = $('.scroll-item');
-  var bannerHeight;
-
-  function sectionListen() {
-    viewportHeight = viewport.height();
-    bannerHeight = (viewportHeight);
-    $('.section').addClass('resize');
-    scrollItem.each(function() {
-      sectionsHeight[this.title] = $(this).offset().top;
-    });
-  }
-  sectionListen();
-  viewport.resize(sectionListen);
-  viewport.bind('orientationchange', function() {
-    sectionListen();
+  //we get the divs offsets looping the menu links and getting the targets (this is dynamic: when we change div #suzy's height, code won't break!)
+  var divs = [];
+  $(".menu a").each(function(i) {
+    var appo = $(this).attr("target");
+    //here we get the distance from top of each div
+    divs[i] = $("#" + appo).offset().top;
   });
 
-  var count = 0;
+  //gets actual scroll and adds window height/2 to change the active menu voice when the lower div reaches half of screen (it can be changed)
+  var pos = $(window).scrollTop();
+  var off = ($(window).height()) / 2;
 
-  scrollItem.each(function() {
-    var anchor = $(this).attr('id');
-    var title = $(this).attr('title');
-    count++;
-    $('#section-menu ul').append('<li><a id="nav_' + title + '" href="#' + anchor + '"><span>' + count + '</span> ' + title + '</a></li>');
-  });
+  pos = pos + off;
 
-  function menuListen() {
-    var pos = $(this).scrollTop();
-    pos = pos + viewportHeight * 0.625;
-    for (i in sectionsHeight) {
-      if (sectionsHeight[i] < pos) {
-        $('#section-menu a').removeClass('active');
-        $('#section-menu a#nav_' + i).addClass('active');;
-        var newHash = '#' + $('.scroll-item[title="' + i + '"]').attr('id');
-        if (history.pushState) {
-          history.pushState(null, null, newHash);
-        } else {
-          location.hash = newHash;
-        }
-      } else {
-        $('#section-menu a#nav_' + i).removeClass('active');
-        if (pos < viewportHeight - 72) {
-          history.pushState(null, null, ' ');
-        }
-      }
+  //we parse our "div distances from top" object (divs) until we find a div which is further from top than the actual scroll position(+ of course window height/2). When we find it, we assign "active" class to the Nth menu voice which is corresponding to the last div closer to the top than the actual scroll -> trick is looping from index=0 while Nth css numeration starts from 1, so when the index=3 (fourth div) breaks our cycly, we give active to the third element in menu.
+  var index = 0;
+
+  for (index = 0; index < divs.length; index++) {
+    if (pos < divs[index]) {
+      break;
     }
   }
-  scrollMenu.css('margin-top', scrollMenu.height() / 2 * -1);
+  $(".menu li:nth-child(" + index + ") a").addClass("active");
+};
 
-  /* ==========================================================================
-     Smooth Scroll for Anchor Links and URL refresh
-     ========================================================================== */
-
-  scrollMenu.find('a').click(function() {
-    var href = $.attr(this, 'href');
-    $('html').animate({
-      scrollTop: $(href).offset().top
-    }, 500, function() {
-      window.location.hash = href;
-    });
-    return false;
-  });
-
-  /* ==========================================================================
-     Fire functions on Scroll Event
-     ========================================================================== */
-function scrollHandler() {
-  menuListen();
-  menuFreeze();
-  }
-  scrollHandler();
-  viewport.on('scroll', function() {
-    scrollHandler();
-    //      window.requestAnimationFrame(scrollHandler);
-  });
-  });
+$(window).scroll(function() {
+  scrollSpy();
+});
+$(document).ready(function() {
+  scrollSpy();
+});

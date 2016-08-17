@@ -2,130 +2,141 @@ doctype html
 html(lang='en')
 	include ../accesorios/header.jade
 	body
-		nav#section-menu
+		.menu
 			ul
-		section#section-one.section.scroll-item(title='Inicio')
-			.content
-				.logo-wrap
-					#demo
-		section#section-two.section.scroll-item(title='Sobre mi')
-			.inner
-				h2.pestanas Sobre mi
-					.tri
-				.row
-					.col-md-6.pnom
-						p Hola, mi nombre es Patty y soy una Coder Front End, Laboratoria me dio la oportunidad de reencontrarme con mis orígenes, de poder disfrutar de nuevo el crear programas. Soy una persona Perseverante, sincera, responsable y sobre todo trato de ser cada día mejor. Pienso que el trabajo en equipo es la forma de llegar a crear grandes cosas.
-					.col-md-6
-						img.img-responsive.soy(src="../image/fotopatty.jpg")				
-		section#section-three.section.scroll-item(title='Habilidades')
-			.inner
-				h2.pestanas Habilidades
-					.tri
-				.row.phab
+				li
+					a(target='Inicio') Inicio
+				li
+					a(target='Sobre') Sobre mi
+				li
+					a(target='Habilidades') Habilidades
+				li
+					a(target='Trabajo') Trabajo
+				li
+					a(target='Contacto') Contacto
+		.main
+			#Inicio
+				.content
+					.logo-wrap
+						#demo					
+			#Sobre
+				.inner
+					h2.pestanas Sobre mi
+						.tri
 					.row
-						.menu1
-							p Basico
-						.menu2
-							p Intermedio
-						.menu3
-							p Avanzado
-					.row
-						table
-							tr
-								td(style="width:50px")
-									.icono
-										img(src="../image/html2.png")
-								td
-									p.text-left HTML
-									.myProgress
-										.myBar#myBar(data-per="90")
-							tr
-								td
-									.icono
-										img(src="../image/css.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="80")
-							tr
-								td(style="width:50px")
-									.icono
-										img(src="../image/js.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="70")
-							tr
-								td
-									.icono
-										img(src="../image/jade.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="60")
-							tr
-								td(style="width:50px")
-									.icono
-										img(src="../image/sass.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="70")
-							tr
-								td
-									.icono
-										img(src="../image/WordPress.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="60")
-							tr
-								td
-									.icono
-										img(src="../image/angular.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="60")
-							tr
-								td(style="width:50px")
-									.icono
-										img(src="../image/androi.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="70")
-							tr
-								td(style="width:50px")
-									.icono
-										img(src="../image/audition.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="70")
-							tr
-								td
-									.icono
-										img(src="../image/photoshop.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="60")
-							tr
-								td
-									.icono
-										img(src="../image/premier.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="60")
-							tr
-								td
-									.icono
-										img(src="../image/jquery.png")
-								td
-									.myProgress
-										.myBar#myBar(data-per="60")
-		section#section-four.section.trabajos.scroll-item(title='Trabajos')
-			.inner
-				h2.pestanas Trabajos
-					.tri
-				include ../accesorios/work.jade
-		section#section-five.section.scroll-item(title='Contactame')
-			.inner
-				h2.pestanas Contactame
-					.tri
-				include ../accesorios/footer.jade
-		include ../accesorios/redesmenu.jade
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
-		script( type="text/javascript" src="../js/main.js")
+						.col-md-6
+							p.nombre Hola, mi nombre es Patty y soy una Coder Front End, Laboratoria me dio la oportunidad de reencontrarme con mis orígenes, de poder disfrutar de nuevo el crear programas. Soy una persona Perseverante, sincera, responsable y sobre todo trato de ser cada día mejor. Pienso que el trabajo en equipo es la forma de llegar a crear grandes cosas.
+						.col-md-6
+							img.img-responsive.caricatura(src="../image/caricatura.png")		
+			#Habilidades
+				.inner
+					h2.pestanas Habilidades
+						.tri
+					.row.phab
+						.row
+							.menu1
+								p.datos Basico
+							.menu2
+								p.datos Intermedio
+							.menu3
+								p.datos Avanzado
+						.row
+							table
+								tr
+									td(style="width:50px")
+										.icono
+											img(src="../image/html2.png")
+									td
+										p.text-left HTML
+										.myProgress
+											.myBar#myBar(data-per="90")
+								tr
+									td
+										.icono
+											img(src="../image/css.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="80")
+								tr
+									td(style="width:50px")
+										.icono
+											img(src="../image/js.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="70")
+								tr
+									td
+										.icono
+											img(src="../image/jade.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="60")
+								tr
+									td(style="width:50px")
+										.icono
+											img(src="../image/sass.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="70")
+								tr
+									td
+										.icono
+											img(src="../image/WordPress.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="60")
+								tr
+									td
+										.icono
+											img(src="../image/angular.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="60")
+								tr
+									td(style="width:50px")
+										.icono
+											img(src="../image/androi.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="70")
+								tr
+									td(style="width:50px")
+										.icono
+											img(src="../image/audition.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="70")
+								tr
+									td
+										.icono
+											img(src="../image/photoshop.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="60")
+								tr
+									td
+										.icono
+											img(src="../image/premier.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="60")
+								tr
+									td
+										.icono
+											img(src="../image/jquery.png")
+									td
+										.myProgress
+											.myBar#myBar(data-per="60")
+			#Trabajo
+				.inner
+					h2.pestanas Trabajos
+						.tri
+					include ../accesorios/work.jade
+			#Contacto
+				.inner
+					h2.pestanas Contactame
+						.tri
+					include ../accesorios/footer.jade
+			include ../accesorios/redesmenu.jade
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+			script( type="text/javascript" src="../js/main.js")
