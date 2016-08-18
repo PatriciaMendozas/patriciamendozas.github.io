@@ -7,10 +7,9 @@ function initPage()
 }
 function checkScroll()
 {
-  var x=document.body.scrollTop;
-  if (x>=1200 && x<1750) {
-      move();
-  } 
+  var x=document.body.scrollTop;  
+  if (x>=1100 && x<2300) {
+      move(); } 
   else {
       var elems = $(".myBar");
       elems.each(function(e)
@@ -20,7 +19,6 @@ function checkScroll()
     $(this).css('width', 10 + '%');
   });
   }
-  console.log(document.body.scrollTop);
 }
 /*habilidades*/
 function move() {

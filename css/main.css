@@ -16,7 +16,7 @@ padding-top: 2px;}
 
 .phab{padding:3% 15%; position:relative;}
 .pdt6{    padding-top: 1%;
-    margin-left: 46%;}
+    margin-left: 45%;}
 /*habilidades*/
 .menu1{position: absolute;
     height: 35em;
@@ -215,7 +215,7 @@ padding-bottom: 90px;}
 @media(max-width:530px){
     .tri{width: 300px;}pe
     .pestanas{width: 280px;font-size:2em;}
-    .fixed-left{left:-53px;}
+    .fixed-left{left:-53px;top:355px;}
     .nombre{margin:25% 18%;font-size: 16px}
     .caricatura{margin-left:22%;}
     .phab{padding: 2% 16%;}
@@ -246,3 +246,4 @@ padding-bottom: 90px;}
     .menu2 > .datos{font-size: 12px;}
     .menu3 > .datos{font-size: 12px;}
 }
+
