@@ -17,8 +17,9 @@ padding-top: 2px;}
 .mt30{margin: 1% 5% 9% 30%;}
 .mt40{margin: 16% 0% 5%;}
 .mg23{margin: 2% 0% 2% 3%;}
-.phab{padding:2% 18%; position:relative;}
-.pdt6{padding-top: 6%;}
+.phab{padding:4% 15%; position:relative;}
+.pdt6{    padding-top: 1%;
+    margin-left: 46%;}
 /*habilidades*/
 .menu1{position: absolute;
     height: 36em;
@@ -38,37 +39,22 @@ padding-top: 2px;}
     padding-left: 7%;
     border-left: 1px dashed #fff}
 
-/*trabajos*/
-.inner.nav-tabs {border-bottom: none;}
-.inner.nav-tabs > li.active > a {
-  color: #fff;
-  background-color: #666666;
-  font-weight: bolder;
-}
-.inner .nav-tabs > li > a {
-  color: #666666;
-  font-family:'Muli', sans-serif; /*tipo de letra*/
-  background-color: #FDB304;
-}
-.inner .page {
-  padding: 5% 0;
-}
-#menu.active {
-  background-color: #2A3159;
-}
-#menu.active .navbar-nav a {
-  border-bottom: none;
-}
-/*circulo*/
+
+/*circulo trabajo*/
+.nav-tabs {
+    border-bottom: 0px;
+padding-bottom: 90px;}
+.tab-content{padding-top: 10%;}
 .ih-item, .ih-item * {
     -moz-box-sizing: border-box;
 }
 .ih-item a {
     color: #333333;
 }
-.ih-item a:hover {
-    text-decoration: none;
-}
+.inner .nav-tabs > li > a {
+    color: #666666;
+    font-family: 'Muli', sans-serif;
+    background-color: #FDB304;}
 .ih-item img {
     height: 100%;
     width: 100%;
@@ -228,9 +214,7 @@ padding-top: 2px;}
 }
 /*DIVS*/
 .main{padding-top:45px;text-align:center;}
-.nombre{margin: 25% 15%;
-font-size: 20px;}
-.caricatura{width: 60%;}
+
 @media(max-width:530px){
     .tri{width: 300px;}
     .pestanas{width: 280px;font-size:2em;}

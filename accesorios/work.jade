@@ -1,21 +1,13 @@
 include workjn
-ul.nav.nav-tabs.pdt6
-	li.active
-		a(data-toggle="tab" href="#home") 1
-	li
-		a(data-toggle="tab" href="#menu1") 2
-	li 
-		a(data-toggle="tab" href="#menu2") 3
-	
 .tab-content
 	#home.tab-pane.fade.in.active
 		.row.page.text-center
-			+col("http://patriciamendozas.github.io/Lab-GridSystem/","../image/GRID SYSTEM.png", "GRID-SYSTEM","Trabajo con Grilla")
-			+col("http://patriciamendozas.github.io/Lab-E-comunidad/.","../image/E-COMUNIDAD.png", "COMUNIDAD","Control de Video")
-			+col(" http://patriciamendozas.github.io/Lab-CinemaLayout/.","../image/CINEMA.png","CINEMA", "Plantilla de Cinema")			
+			+col("http://patriciamendozas.github.io/Lab-GridSystem/","image/GRID SYSTEM.png", "GRID-SYSTEM","Trabajo con Grilla")
+			+col("http://patriciamendozas.github.io/Lab-E-comunidad/.","image/E-COMUNIDAD.png", "COMUNIDAD","Control de Video")
+			+col(" http://patriciamendozas.github.io/Lab-CinemaLayout/.","image/CINEMA.png","CINEMA", "Plantilla de Cinema")			
 	#menu1.tab-pane.fade
 		.row.page.text-center
-			+col("http://patriciamendozas.github.io/Lab-Escueladanza/.","../image/E-DANZA.png", "ESCUELA DANZA","Trabajo grupal")
+			+col("http://patriciamendozas.github.io/Lab-Escueladanza/.","image/E-DANZA.png", "ESCUELA DANZA","Trabajo grupal")
 			+col("#","image/dash.png", "Dashgum Theme")
 			+col("#","image/blog.png", "Blog")
 	#menu2.tab-pane.fade
@@ -23,3 +15,10 @@ ul.nav.nav-tabs.pdt6
 			+col("#","image/kane.png", "Kane Theme ")
 			+col("#","image/agency.png", "Agency ")
 			+col("#","image/love.png", "Love Blog")
+ul.nav.nav-tabs.pdt6
+	li.active
+		a(data-toggle="tab" href="#home") 1
+	li
+		a(data-toggle="tab" href="#menu1") 2
+	li 
+		a(data-toggle="tab" href="#menu2") 3

@@ -7,7 +7,7 @@ html(lang='en')
 				li
 					a(target='Inicio') Inicio
 				li
-					a(target='Sobre') Sobre mi
+					a(target='Sobre') Sobre mí
 				li
 					a(target='Habilidades') Habilidades
 				li
@@ -21,13 +21,29 @@ html(lang='en')
 						#demo					
 			#Sobre
 				.inner
-					h2.pestanas Sobre mi
+					h2.pestanas Sobre mí
 						.tri
 					.row
+						.col-md-6.nombre
+							p Hola, mi nombre es Patty y soy una Coder Front End egresada de Laboratoria, donde tuve la oportunidad de reencontrarme con mis orígenes, de poder disfrutar de nuevo el crear programas.
+							p Tengo estudios técnicos en Computación e Informática y soy Bachiller en Ciencias de la Comunicación de la Universidad Nacional San Agústin.
+							p Me considero una persona perseverante, sincera, responsable y sobre todo trato de ser cada día mejor, pienso que el trabajo en equipo es la forma de llegar a crear grandes cosas.
+							quote.frase "No eres lo que logras,eres lo que superas."
+							.intereses
+								h3 Mis Preferencias
+								ul.list-inline.list-unstyled
+									li
+										span.glyphicon.glyphicon-headphones
+									li
+										span.glyphicon.glyphicon-book
+									li
+										span.glyphicon.glyphicon-camera
+									li
+										span.glyphicon.glyphicon-facetime-video
+									li
+										span.glyphicon.glyphicon-fire
 						.col-md-6
-							p.nombre Hola, mi nombre es Patty y soy una Coder Front End, Laboratoria me dio la oportunidad de reencontrarme con mis orígenes, de poder disfrutar de nuevo el crear programas. Soy una persona Perseverante, sincera, responsable y sobre todo trato de ser cada día mejor. Pienso que el trabajo en equipo es la forma de llegar a crear grandes cosas.
-						.col-md-6
-							img.img-responsive.caricatura(src="image/caricatura.png")		
+							img.img-responsive.caricatura(src="image/foto.png")		
 			#Habilidades
 				.inner
 					h2.pestanas Habilidades
@@ -35,7 +51,7 @@ html(lang='en')
 					.row.phab
 						.row
 							.menu1
-								p.datos Basico
+								p.datos Básico
 							.menu2
 								p.datos Intermedio
 							.menu3
@@ -44,13 +60,17 @@ html(lang='en')
 							table
 								tr
 									td(style="width:50px")
+										p.codenombre HTML
+									td(style="width:50px")
 										.icono
 											img(src="image/html2.png")
 									td
-										p.nombi.text-left HTML
+										
 										.myProgress
 											.myBar#myBar(data-per="90")
 								tr
+									td
+										p.codenombre CSS
 									td
 										.icono
 											img(src="image/css.png")
@@ -58,7 +78,9 @@ html(lang='en')
 										.myProgress
 											.myBar#myBar(data-per="80")
 								tr
-									td(style="width:50px")
+									td 
+										p.codenombre JavaScript
+									td
 										.icono
 											img(src="image/js.png")
 									td
@@ -66,47 +88,61 @@ html(lang='en')
 											.myBar#myBar(data-per="70")
 								tr
 									td
+										p.codenombre Jade
+									td
 										.icono
 											img(src="image/jade.png")
 									td
 										.myProgress
-											.myBar#myBar(data-per="60")
+											.myBar#myBar(data-per="70")
 								tr
-									td(style="width:50px")
+									td
+										p.codenombre Sass
+									td
 										.icono
 											img(src="image/sass.png")
 									td
 										.myProgress
-											.myBar#myBar(data-per="70")
+											.myBar#myBar(data-per="50")
 								tr
+									td
+										p.codenombre WordPress
 									td
 										.icono
 											img(src="image/WordPress.png")
 									td
 										.myProgress
-											.myBar#myBar(data-per="60")
+											.myBar#myBar(data-per="40")
 								tr
+									td
+										p.codenombre Angular
 									td
 										.icono
 											img(src="image/angular.png")
 									td
 										.myProgress
-											.myBar#myBar(data-per="60")
+											.myBar#myBar(data-per="20")
 								tr
-									td(style="width:50px")
+									td
+										p.codenombre Androi
+									td
 										.icono
 											img(src="image/androi.png")
 									td
 										.myProgress
-											.myBar#myBar(data-per="70")
+											.myBar#myBar(data-per="30")
 								tr
-									td(style="width:50px")
+									td
+										p.codenombre Audition
+									td
 										.icono
 											img(src="image/audition.png")
 									td
 										.myProgress
 											.myBar#myBar(data-per="70")
 								tr
+									td
+										p.codenombre Photoshop
 									td
 										.icono
 											img(src="image/photoshop.png")
@@ -115,26 +151,31 @@ html(lang='en')
 											.myBar#myBar(data-per="60")
 								tr
 									td
+										p.codenombre Premier
+									td 
 										.icono
 											img(src="image/premier.png")
+
 									td
 										.myProgress
 											.myBar#myBar(data-per="60")
 								tr
 									td
+										p.codenombre Jquery
+									td
 										.icono
 											img(src="image/jquery.png")
 									td
 										.myProgress
-											.myBar#myBar(data-per="60")
+											.myBar#myBar(data-per="30")
 			#Trabajo
 				.inner
 					h2.pestanas Trabajos
 						.tri
-					include accesorios/work.jade
+					include accesorios/work.jade			
 			#Contacto
 				.inner
-					h2.pestanas Contactame
+					h2.pestanas Contáctame
 						.tri
 					include accesorios/footer.jade
 			include accesorios/redesmenu.jade

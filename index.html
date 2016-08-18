@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio Patricia Mendozas">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/common.css" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Muli|Tillana" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Muli|Tillana|Playball" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -126,7 +126,7 @@
     <div class="menu">
       <ul>
         <li><a target="Inicio">Inicio</a></li>
-        <li><a target="Sobre">Sobre mi</a></li>
+        <li><a target="Sobre">Sobre mí</a></li>
         <li><a target="Habilidades">Habilidades</a></li>
         <li><a target="Trabajo">Trabajo</a></li>
         <li><a target="Contacto">Contacto</a></li>
@@ -142,14 +142,27 @@
       </div>
       <div id="Sobre">
         <div class="inner">
-          <h2 class="pestanas">Sobre mi
+          <h2 class="pestanas">Sobre mí
             <div class="tri"></div>
           </h2>
           <div class="row">
-            <div class="col-md-6">
-              <p class="nombre">Hola, mi nombre es Patty y soy una Coder Front End, Laboratoria me dio la oportunidad de reencontrarme con mis orígenes, de poder disfrutar de nuevo el crear programas. Soy una persona Perseverante, sincera, responsable y sobre todo trato de ser cada día mejor. Pienso que el trabajo en equipo es la forma de llegar a crear grandes cosas.</p>
+            <div class="col-md-6 nombre">
+              <p>Hola, mi nombre es Patty y soy una Coder Front End egresada de Laboratoria, donde tuve la oportunidad de reencontrarme con mis orígenes, de poder disfrutar de nuevo el crear programas.</p>
+              <p>Tengo estudios técnicos en Computación e Informática y soy Bachiller en Ciencias de la Comunicación de la Universidad Nacional San Agústin.</p>
+              <p>Me considero una persona perseverante, sincera, responsable y sobre todo trato de ser cada día mejor, pienso que el trabajo en equipo es la forma de llegar a crear grandes cosas.</p>
+              <quote class="frase">"No eres lo que logras,eres lo que superas."</quote>
+              <div class="intereses">
+                <h3>Mis Preferencias</h3>
+                <ul class="list-inline list-unstyled">
+                  <li><span class="glyphicon glyphicon-headphones"></span></li>
+                  <li><span class="glyphicon glyphicon-book"></span></li>
+                  <li><span class="glyphicon glyphicon-camera"></span></li>
+                  <li><span class="glyphicon glyphicon-facetime-video"></span></li>
+                  <li><span class="glyphicon glyphicon-fire"></span></li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-6"><img src="image/caricatura.png" class="img-responsive caricatura"></div>
+            <div class="col-md-6"><img src="image/foto.png" class="img-responsive caricatura"></div>
           </div>
         </div>
       </div>
@@ -161,7 +174,7 @@
           <div class="row phab">
             <div class="row">
               <div class="menu1">
-                <p class="datos">Basico</p>
+                <p class="datos">Básico</p>
               </div>
               <div class="menu2">
                 <p class="datos">Intermedio</p>
@@ -174,16 +187,21 @@
               <table>
                 <tr>
                   <td style="width:50px">
+                    <p class="codenombre">HTML</p>
+                  </td>
+                  <td style="width:50px">
                     <div class="icono"><img src="image/html2.png"></div>
                   </td>
                   <td>
-                    <p class="nombi text-left">HTML</p>
                     <div class="myProgress">
                       <div id="myBar" data-per="90" class="myBar"></div>
                     </div>
                   </td>
                 </tr>
                 <tr>
+                  <td>
+                    <p class="codenombre">CSS</p>
+                  </td>
                   <td>
                     <div class="icono"><img src="image/css.png"></div>
                   </td>
@@ -194,7 +212,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td style="width:50px">
+                  <td> 
+                    <p class="codenombre">JavaScript</p>
+                  </td>
+                  <td>
                     <div class="icono"><img src="image/js.png"></div>
                   </td>
                   <td>
@@ -205,17 +226,10 @@
                 </tr>
                 <tr>
                   <td>
-                    <div class="icono"><img src="image/jade.png"></div>
+                    <p class="codenombre">Jade</p>
                   </td>
                   <td>
-                    <div class="myProgress">
-                      <div id="myBar" data-per="60" class="myBar"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td style="width:50px">
-                    <div class="icono"><img src="image/sass.png"></div>
+                    <div class="icono"><img src="image/jade.png"></div>
                   </td>
                   <td>
                     <div class="myProgress">
@@ -224,37 +238,62 @@
                   </td>
                 </tr>
                 <tr>
+                  <td>
+                    <p class="codenombre">Sass</p>
+                  </td>
+                  <td>
+                    <div class="icono"><img src="image/sass.png"></div>
+                  </td>
+                  <td>
+                    <div class="myProgress">
+                      <div id="myBar" data-per="50" class="myBar"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="codenombre">WordPress</p>
+                  </td>
                   <td>
                     <div class="icono"><img src="image/WordPress.png"></div>
                   </td>
                   <td>
                     <div class="myProgress">
-                      <div id="myBar" data-per="60" class="myBar"></div>
+                      <div id="myBar" data-per="40" class="myBar"></div>
                     </div>
                   </td>
                 </tr>
                 <tr>
+                  <td>
+                    <p class="codenombre">Angular</p>
+                  </td>
                   <td>
                     <div class="icono"><img src="image/angular.png"></div>
                   </td>
                   <td>
                     <div class="myProgress">
-                      <div id="myBar" data-per="60" class="myBar"></div>
+                      <div id="myBar" data-per="20" class="myBar"></div>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td style="width:50px">
+                  <td>
+                    <p class="codenombre">Androi</p>
+                  </td>
+                  <td>
                     <div class="icono"><img src="image/androi.png"></div>
                   </td>
                   <td>
                     <div class="myProgress">
-                      <div id="myBar" data-per="70" class="myBar"></div>
+                      <div id="myBar" data-per="30" class="myBar"></div>
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td style="width:50px">
+                  <td>
+                    <p class="codenombre">Audition</p>
+                  </td>
+                  <td>
                     <div class="icono"><img src="image/audition.png"></div>
                   </td>
                   <td>
@@ -264,6 +303,9 @@
                   </td>
                 </tr>
                 <tr>
+                  <td>
+                    <p class="codenombre">Photoshop</p>
+                  </td>
                   <td>
                     <div class="icono"><img src="image/photoshop.png"></div>
                   </td>
@@ -275,6 +317,9 @@
                 </tr>
                 <tr>
                   <td>
+                    <p class="codenombre">Premier</p>
+                  </td>
+                  <td> 
                     <div class="icono"><img src="image/premier.png"></div>
                   </td>
                   <td>
@@ -285,11 +330,14 @@
                 </tr>
                 <tr>
                   <td>
+                    <p class="codenombre">Jquery</p>
+                  </td>
+                  <td>
                     <div class="icono"><img src="image/jquery.png"></div>
                   </td>
                   <td>
                     <div class="myProgress">
-                      <div id="myBar" data-per="60" class="myBar"></div>
+                      <div id="myBar" data-per="30" class="myBar"></div>
                     </div>
                   </td>
                 </tr>
@@ -303,18 +351,13 @@
           <h2 class="pestanas">Trabajos
             <div class="tri"></div>
           </h2>
-          <ul class="nav nav-tabs pdt6">
-            <li class="active"><a data-toggle="tab" href="#home">1</a></li>
-            <li><a data-toggle="tab" href="#menu1">2</a></li>
-            <li> <a data-toggle="tab" href="#menu2">3</a></li>
-          </ul>
           <div class="tab-content">
             <div id="home" class="tab-pane fade in active">
               <div class="row page text-center">
                           <div class="col-md-4 col-sm-6 col-xs-12 circulo">
                             <div class="ih-item circle effect1"><a href="http://patriciamendozas.github.io/Lab-GridSystem/" target="_blank">
                                 <div class="spinner"></div>
-                                <div class="img"><img src="../image/GRID SYSTEM.png"></div>
+                                <div class="img"><img src="image/GRID SYSTEM.png"></div>
                                 <div class="info">
                                   <div class="info-back">
                                     <h3>GRID-SYSTEM</h3>
@@ -325,7 +368,7 @@
                           <div class="col-md-4 col-sm-6 col-xs-12 circulo">
                             <div class="ih-item circle effect1"><a href="http://patriciamendozas.github.io/Lab-E-comunidad/." target="_blank">
                                 <div class="spinner"></div>
-                                <div class="img"><img src="../image/E-COMUNIDAD.png"></div>
+                                <div class="img"><img src="image/E-COMUNIDAD.png"></div>
                                 <div class="info">
                                   <div class="info-back">
                                     <h3>COMUNIDAD</h3>
@@ -336,7 +379,7 @@
                           <div class="col-md-4 col-sm-6 col-xs-12 circulo">
                             <div class="ih-item circle effect1"><a href=" http://patriciamendozas.github.io/Lab-CinemaLayout/." target="_blank">
                                 <div class="spinner"></div>
-                                <div class="img"><img src="../image/CINEMA.png"></div>
+                                <div class="img"><img src="image/CINEMA.png"></div>
                                 <div class="info">
                                   <div class="info-back">
                                     <h3>CINEMA</h3>
@@ -351,7 +394,7 @@
                           <div class="col-md-4 col-sm-6 col-xs-12 circulo">
                             <div class="ih-item circle effect1"><a href="http://patriciamendozas.github.io/Lab-Escueladanza/." target="_blank">
                                 <div class="spinner"></div>
-                                <div class="img"><img src="../image/E-DANZA.png"></div>
+                                <div class="img"><img src="image/E-DANZA.png"></div>
                                 <div class="info">
                                   <div class="info-back">
                                     <h3>ESCUELA DANZA</h3>
@@ -421,11 +464,16 @@
               </div>
             </div>
           </div>
+          <ul class="nav nav-tabs pdt6">
+            <li class="active"><a data-toggle="tab" href="#home">1</a></li>
+            <li><a data-toggle="tab" href="#menu1">2</a></li>
+            <li> <a data-toggle="tab" href="#menu2">3</a></li>
+          </ul>
         </div>
       </div>
       <div id="Contacto">
         <div class="inner">
-          <h2 class="pestanas">Contactame
+          <h2 class="pestanas">Contáctame
             <div class="tri"></div>
           </h2>
           <div class="row">
@@ -440,14 +488,14 @@
                 <div class="col-md-4"></div>
                 <div class="col-md-8 mt40">
                   <h3 class="text-right datos">Patricia Mendoza Soncco</h3>
-                  <h5 class="text-right datos">Telefono: 986866794</h5>
+                  <h5 class="text-right datos">Teléfono: 986866794</h5>
                   <h6 class="text-right datos">Correo: patriciamendozasoncco@gmail.com</h6>
                 </div>
               </div>
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-4">
-              <p class="mt30 datos">"Nunca pares, Nunca te conformes, Hasta que lo bueno sea mejor y lo mejor excelente"</p>
+              <p class="mt30 frase">"Nunca pares, nunca te conformes; hasta que lo bueno sea mejor y lo mejor excelente"</p>
             </div>
           </div>
         </div>
