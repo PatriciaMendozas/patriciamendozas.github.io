@@ -220,9 +220,11 @@ padding-bottom: 90px;}
     margin: 0 116px;
 }
 .nombre{margin: 0% 13%;}
+.fixed-left{    left: -48px;
+    top: 120px;}
 }
 
-@media(max-width:500px){
+@media(max-width:565px){
     .tri{width: 300px;}pe
     .pestanas{width: 280px;font-size:2em;}
     .fixed-left{left:-53px;top:355px;}
