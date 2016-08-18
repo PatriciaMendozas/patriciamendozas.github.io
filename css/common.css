@@ -1,6 +1,6 @@
 /**{
-    outline:1px solid rgba(255,0,0,1);}
-}*/
+    outline:1px solid rgba(255,0,0,1);}*/
+
 * {
 	box-sizing: border-box;
 	user-select: none;
@@ -28,8 +28,9 @@
 #Habilidades{background:url("../image/fondoo.jpg");color:#fff;}
 #Trabajo{background:url("../image/fondoblanco.jpg");}
 #Contacto{
-    background:url("../image/FOOTER.png");
+    background:url("../image/fondoo.jpg");
     background-size: cover;
+    color:#fff;
 }
 .logo-wrap {
     width: 100%;
@@ -84,7 +85,7 @@
     margin: 0;
     padding: 25px;
     width: 231px;
-    margin-top: 6%; 
+    margin-top: 0%; 
 }
 /*sobre mi*/
 .frase{font-family: 'Playball', cursive;font-size: 25px;}
@@ -131,6 +132,12 @@ table{width: 100%;}
     margin-bottom: -1px;}
 /*footer*/
 .datos{
-   font-family: 'Tillana', cursive;
-    font-size: 19px;
+   font-family: 'Arima Madurai', cursive;
+    font-size: 17px;
+       
 }
+.footer-datos{padding-top: 105px;}
+.footer-frase{padding-bottom: 105px;}
+.footer-datos, .footer-frase{margin:0 400px; }
+.footer-frase > .frase{color:#fff;margin-bottom: 0px;font-size:20px;}
+.footer-laptop > img{width: 12%;}
