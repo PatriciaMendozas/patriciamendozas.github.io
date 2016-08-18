@@ -218,31 +218,31 @@ padding-bottom: 90px;}
     .fixed-left{left:-53px;}
     .nombre{margin:25% 18%;font-size: 16px}
     .caricatura{margin-left:22%;}
-    .phab{padding: 2% 22%;}
+    .phab{padding: 2% 16%;}
     .circulo {
-    padding: 1% 0% 3% 12%;
+    padding: 1% 0% 3% 16%;
     margin-bottom: 6%;}
     .mg23 {
     padding: 0% 5%;}
-    #Contacto{background-position: top center; }
     .menu1 {
-    left: 10%;
+    left: 34%;
     margin: -3% 10% 0%;}
     .menu2 {
-    left: 35%;
+    left: 52%;
     margin: -3% 4% 0%;
-    padding-left: 2%;}
+    padding-left: 1%;}
     .menu3 {
-    left: 65%;
+    left: 72%;
     margin: -3% 4% 0%;
-    padding-left: 2%;}
+    padding-left: 1%;}
     .nombi {
     margin-left: 17%;}
     table{margin-top: 14%;}
-  .mt30 {
-    margin: 1% 21% 9% 29%;
-    padding-top: 12%;
-    background: rgba(134, 131, 126, 0.6);}
-    .mt40{background: rgba(134, 131, 126, 0.6);padding: 3% 0%;
-        }
+    .footer-laptop > img {
+    width: 32%;}
+    .footer-datos, .footer-frase {margin: 0px 15px;}
+    .pdt6{margin-left: 28%;}
+    .menu1 > .datos{font-size: 12px;}
+    .menu2 > .datos{font-size: 12px;}
+    .menu3 > .datos{font-size: 12px;}
 }
