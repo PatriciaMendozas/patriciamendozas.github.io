@@ -211,8 +211,18 @@ padding-bottom: 90px;}
 }
 /*DIVS*/
 .main{padding-top:45px;text-align:center;}
+@media(max-width:750px){
+    .circulo {
+    padding: 1% 0% 3% 28%;
+    margin-bottom: 6%;}
+    .pdt6{margin-left: 38%;}
+    .footer-datos, .footer-frase {
+    margin: 0 116px;
+}
+.nombre{margin: 0% 13%;}
+}
 
-@media(max-width:700px){
+@media(max-width:500px){
     .tri{width: 300px;}pe
     .pestanas{width: 280px;font-size:2em;}
     .fixed-left{left:-53px;top:355px;}
@@ -220,7 +230,7 @@ padding-bottom: 90px;}
     .caricatura{margin-left:22%;}
     .phab{padding: 2% 16%;}
     .circulo {
-    padding: 1% 0% 3% 16%;
+    padding: 1% 0% 3% 18%;
     margin-bottom: 6%;}
     .mg23 {
     padding: 0% 5%;}
@@ -241,7 +251,7 @@ padding-bottom: 90px;}
     .footer-laptop > img {
     width: 32%;}
     .footer-datos, .footer-frase {margin: 0px 15px;}
-    .pdt6{margin-left: 28%;}
+    .pdt6{margin-left: 33%;}
     .menu1 > .datos{font-size: 12px;}
     .menu2 > .datos{font-size: 12px;}
     .menu3 > .datos{font-size: 12px;}
