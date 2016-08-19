@@ -141,3 +141,6 @@ table{width: 100%;}
 .footer-datos, .footer-frase{margin:0 360px; }
 .footer-frase > .frase{color:#fff;margin-bottom: 0px;font-size:20px;}
 .footer-laptop > img{width: 12%;}
+#amarillo {color:#fff;}
+#amarillo:hover{font-size: 20px;color:#FDB304;}
+.correo{margin-right: 2%;}
