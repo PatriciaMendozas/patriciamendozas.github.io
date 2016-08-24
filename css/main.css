@@ -13,7 +13,6 @@ img{width: 100%;}
 padding-top: 2px;}
 .pd0{padding-left:0px;}
 .circulo{padding:0% 0% 3% 7%;}
-
 .phab{padding:3% 15%; position:relative;}
 .pdt6{    padding-top: 1%;
     margin-left: 43%;}
@@ -209,6 +208,24 @@ padding-bottom: 90px;}
 .menu ul li a.active{
         border-color:#fff;
 }
+/*resumen*/
+.resumen{
+    width: 219px;
+    height: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 610px;
+    right: 580px;
+    }
+    
+.imgmpmsv{
+    transition: transform.2s ease-in-out;   
+    }
+.cv:hover{text-decoration:none;
+color:#000;}
+.cv{color:#fff;}
+.btn{border:1px #FDB304 solid;
+background-color: transparent;}
 /*DIVS*/
 .main{padding-top:45px;text-align:center;}
 @media(max-width:750px){

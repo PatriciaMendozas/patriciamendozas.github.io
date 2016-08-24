@@ -89,3 +89,19 @@ $(window).scroll(function() {
 $(document).ready(function() {
   scrollSpy();
 });
+//resumen
+var x=0;
+var y=0;
+  function cambiar(){
+    if (y<16) {
+      x=x-27;
+      y=y+1;
+      $(".imgmpmsv").css("transform","translateY("+x+"px)"); 
+      
+    }
+    else{
+      x=0;
+      y=0;
+    
+    }  
+  }
